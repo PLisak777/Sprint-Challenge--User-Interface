@@ -167,6 +167,7 @@ p {
 
 header {
     font-size: 1.8rem;
+    box-sizing: border-box;
 }
 
 .nav-container {
@@ -203,6 +204,13 @@ nav.navlist a {
     max-width: 800px;
     margin-bottom: 1%;
     margin-top: 2%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+    .nav-container .banner {
+        display: none;
+    }
 }
 
 .container {
@@ -312,10 +320,12 @@ nav.navlist a {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 500px) {
