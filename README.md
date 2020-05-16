@@ -32,15 +32,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+1. If you were to describe semantic HTML to the next cohort of students, what would you say? 
+
+  Semantic HTML is a way to give simple meaning to each element on the page. Sections of your markup are named for the purpose they fulfill instead of being just an assigned value.
 
 2. What are the 4 areas of the box model?
 
+    Content, Padding, Border, Margin 
+
 3. While using flexbox, what axis does the following property work on: `align-items: center`?
+
+    The Cross Axis
 
 4. Explain why git is valuable to a team of developers.
 
+    Git allows a team of developers to work on a single project simultaneously without the changes affecting the main project. 
+
 5. Define mobile-first design in your own words.
+
+    Mobile first design is laid out specifically for mobile devices. It makes use of smaller screen sizes and lays out information in a way that is optimized for viewing on a mobile device.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
@@ -52,8 +62,8 @@ You are expected to be able to answer all these questions. Your responses contri
 - [x] Add your team lead as collaborator on Github
 - [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [X] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Minimum Viable Product
 
@@ -64,22 +74,22 @@ Your finished project must include all of the following requirements:
 [Review the provided design files](/design). Notice the navigation and header images are missing in the starter code.
 
 - [X] Build the HTML and CSS to create the missing navigation and header
-- [ ] Link the `About` navigation item to an about.html page (you'll also need to create `about.html`)
+- [X] Link the `About` navigation item to an about.html page (you'll also need to create `about.html`)
 - [ ] Make your design responsive such that it is accessible on mobile(500px)and matches the [mobile](design/Mobile.png) wireframe.
 - [X] Add responsive breakpoints to your code by using media queries
 
 You will also notice there are 10 boxes on the home page that need background colors. Use this list below to correctly style each box:
 
-- [ ] box1: `teal`
-- [ ] box2: `gold`
-- [ ] box3: `cadetblue`
-- [ ] box4: `coral`
-- [ ] box5: `crimson`
-- [ ] box6: `forestgreen`
-- [ ] box7: `darkorchid`
-- [ ] box8: `hotpink`
-- [ ] box9: `indigo`
-- [ ] box10: `dodgerblue`
+- [X] box1: `teal`
+- [X] box2: `gold`
+- [X] box3: `cadetblue`
+- [X] box4: `coral`
+- [X] box5: `crimson`
+- [X] box6: `forestgreen`
+- [X] box7: `darkorchid`
+- [X] box8: `hotpink`
+- [X] box9: `indigo`
+- [X] box10: `dodgerblue`
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -104,6 +114,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master
