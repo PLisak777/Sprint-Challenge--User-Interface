@@ -171,7 +171,7 @@ header {
 
 .nav-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     display: flex;
     flex-flow: row wrap;
     box-sizing: border-box;
@@ -179,26 +179,30 @@ header {
 }
 
 .nav-container .icon {
-    border: 1px solid red;
     width: 20%;
     display: flex;
+    align-items: flex-start;
+    margin-bottom: 2%;
 }
 
 .nav-container nav.navlist {
-    border: 1px solid red;
     width: 80%;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
+    margin-bottom: 1%;
 }
 
 nav.navlist a {
     text-decoration: none;
     color: black;
+    padding: 5px;
 }
 
 .nav-container .banner {
-    border: 1px solid red;
+    max-width: 800px;
+    margin-bottom: 1%;
+    margin-top: 2%;
 }
 
 .container {
