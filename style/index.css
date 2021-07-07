@@ -3,71 +3,234 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
+    font-size: 1.6rem;
     line-height: 1.4;
 }
 
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Header section */
+
+header.nav-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 2%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.nav-container .icon {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container .navlist {
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.nav-container .navlist a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-container .banner {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+@media (max-width: 500px) {
+    .nav-container .icon {
+        width: 50%;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .nav-container .navlist {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        line-height: 1.4;
+    }
+    .nav-container .navlist a {
+        font-size: 3rem;
+    }
+}
+
+
+/* Top Section */
+
 .container {
-    width: 800px;
+    max-width: 700px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -82,7 +245,16 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .top-content .text-container {
+        width: 100%;
+        margin: 0 auto;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
 }
 
 .middle-content {
@@ -107,23 +279,94 @@ p {
     background: black;
     margin: 20px 2.5%;
     color: white;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .middle-content h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .middle-content .boxes {
+        flex-direction: column;
+        align-content: center;
+    }
+    .middle-content .boxes .box {
+        width: 25%;
+        margin: 5px 2.5%;
+    }
+}
+
+.middle-content .boxes .box.box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box.box2 {
+    background: gold;
+}
+
+.middle-content .boxes .box.box3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box.box4 {
+    background: coral;
+}
+
+.middle-content .boxes .box.box5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box.box6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.box7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.box8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.box9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+    background: dodgerblue;
 }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+    box-sizing: border-box;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+@media (max-width: 500px) {
+    .bottom-content {
+        flex-direction: column;
+    }
+    .bottom-content h2 {
+        font-size: 2rem;
+    }
+    .bottom-content p {
+        margin: 2px;
+        padding: 1%;
+    }
 }
 
 footer {
@@ -143,4 +386,16 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    footer nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer nav a {
+        font-size: 3rem;
+        line-height: 1.4;
+    }
 }
